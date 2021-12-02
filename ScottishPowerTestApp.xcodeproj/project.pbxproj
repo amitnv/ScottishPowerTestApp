@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7B52346827595CCF00A9BA0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52346727595CCF00A9BA0D /* AppDelegate.swift */; };
-		7B52346C27595CCF00A9BA0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52346B27595CCF00A9BA0D /* ViewController.swift */; };
 		7B52346F27595CCF00A9BA0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B52346D27595CCF00A9BA0D /* Main.storyboard */; };
 		7B52347127595CD100A9BA0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B52347027595CD100A9BA0D /* Assets.xcassets */; };
 		7B52347427595CD100A9BA0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B52347227595CD100A9BA0D /* LaunchScreen.storyboard */; };
 		7B52347F27595CD100A9BA0D /* ScottishPowerTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52347E27595CD100A9BA0D /* ScottishPowerTestAppTests.swift */; };
 		7B52348927595CD100A9BA0D /* ScottishPowerTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52348827595CD100A9BA0D /* ScottishPowerTestAppUITests.swift */; };
 		7B52348B27595CD100A9BA0D /* ScottishPowerTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52348A27595CD100A9BA0D /* ScottishPowerTestAppUITestsLaunchTests.swift */; };
+		7B5234982759677800A9BA0D /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5234972759677800A9BA0D /* Tracks.swift */; };
+		7B52349A275967F200A9BA0D /* TrackListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B523499275967F200A9BA0D /* TrackListTableViewController.swift */; };
+		7B52349C275968E400A9BA0D /* TracksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52349B275968E400A9BA0D /* TracksTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		7B52346427595CCF00A9BA0D /* ScottishPowerTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScottishPowerTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B52346727595CCF00A9BA0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B52346B27595CCF00A9BA0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B52346E27595CCF00A9BA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B52347027595CD100A9BA0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B52347327595CD100A9BA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		7B52348427595CD100A9BA0D /* ScottishPowerTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScottishPowerTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B52348827595CD100A9BA0D /* ScottishPowerTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScottishPowerTestAppUITests.swift; sourceTree = "<group>"; };
 		7B52348A27595CD100A9BA0D /* ScottishPowerTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScottishPowerTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B5234972759677800A9BA0D /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		7B523499275967F200A9BA0D /* TrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListTableViewController.swift; sourceTree = "<group>"; };
+		7B52349B275968E400A9BA0D /* TracksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				7B52346727595CCF00A9BA0D /* AppDelegate.swift */,
-				7B52346B27595CCF00A9BA0D /* ViewController.swift */,
+				7B5234972759677800A9BA0D /* Tracks.swift */,
 				7B52346D27595CCF00A9BA0D /* Main.storyboard */,
+				7B523499275967F200A9BA0D /* TrackListTableViewController.swift */,
+				7B52349B275968E400A9BA0D /* TracksTableViewCell.swift */,
 				7B52347027595CD100A9BA0D /* Assets.xcassets */,
 				7B52347227595CD100A9BA0D /* LaunchScreen.storyboard */,
 				7B52347527595CD100A9BA0D /* Info.plist */,
@@ -255,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B52346C27595CCF00A9BA0D /* ViewController.swift in Sources */,
+				7B5234982759677800A9BA0D /* Tracks.swift in Sources */,
 				7B52346827595CCF00A9BA0D /* AppDelegate.swift in Sources */,
+				7B52349A275967F200A9BA0D /* TrackListTableViewController.swift in Sources */,
+				7B52349C275968E400A9BA0D /* TracksTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
