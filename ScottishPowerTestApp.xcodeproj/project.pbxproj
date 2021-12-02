@@ -17,6 +17,9 @@
 		7B5234982759677800A9BA0D /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5234972759677800A9BA0D /* Tracks.swift */; };
 		7B52349A275967F200A9BA0D /* TrackListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B523499275967F200A9BA0D /* TrackListTableViewController.swift */; };
 		7B52349C275968E400A9BA0D /* TracksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52349B275968E400A9BA0D /* TracksTableViewCell.swift */; };
+		7B52349E27596A8200A9BA0D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52349D27596A8200A9BA0D /* Network.swift */; };
+		7B5234A027596B3200A9BA0D /* TrackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52349F27596B3200A9BA0D /* TrackListViewModel.swift */; };
+		7B5234A227596BFF00A9BA0D /* TrackDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5234A127596BFF00A9BA0D /* TrackDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		7B5234972759677800A9BA0D /* Tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
 		7B523499275967F200A9BA0D /* TrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListTableViewController.swift; sourceTree = "<group>"; };
 		7B52349B275968E400A9BA0D /* TracksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksTableViewCell.swift; sourceTree = "<group>"; };
+		7B52349D27596A8200A9BA0D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		7B52349F27596B3200A9BA0D /* TrackListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewModel.swift; sourceTree = "<group>"; };
+		7B5234A127596BFF00A9BA0D /* TrackDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 				7B5234972759677800A9BA0D /* Tracks.swift */,
 				7B52346D27595CCF00A9BA0D /* Main.storyboard */,
 				7B523499275967F200A9BA0D /* TrackListTableViewController.swift */,
+				7B52349F27596B3200A9BA0D /* TrackListViewModel.swift */,
+				7B5234A127596BFF00A9BA0D /* TrackDetailViewModel.swift */,
+				7B52349D27596A8200A9BA0D /* Network.swift */,
 				7B52349B275968E400A9BA0D /* TracksTableViewCell.swift */,
 				7B52347027595CD100A9BA0D /* Assets.xcassets */,
 				7B52347227595CD100A9BA0D /* LaunchScreen.storyboard */,
@@ -261,9 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B52349E27596A8200A9BA0D /* Network.swift in Sources */,
 				7B5234982759677800A9BA0D /* Tracks.swift in Sources */,
 				7B52346827595CCF00A9BA0D /* AppDelegate.swift in Sources */,
 				7B52349A275967F200A9BA0D /* TrackListTableViewController.swift in Sources */,
+				7B5234A227596BFF00A9BA0D /* TrackDetailViewModel.swift in Sources */,
+				7B5234A027596B3200A9BA0D /* TrackListViewModel.swift in Sources */,
 				7B52349C275968E400A9BA0D /* TracksTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
