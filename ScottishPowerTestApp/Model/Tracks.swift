@@ -19,10 +19,10 @@ struct Tracks: Decodable {
 struct Result: Decodable {
     let trackName: String?
     let artistName: String?
-    let trackPrice: Double
+    let trackPrice: Double?
     let artworkUrl100: String?
     let currency: String?
-    let trackTimeMillis: Int
+    let trackTimeMillis: Int?
     let releaseDate: String?
     let trackViewUrl: String?
 }
