@@ -14,6 +14,7 @@ class TrackListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tableView.separatorStyle = .none
         fetchTracks()
     }
     
@@ -28,6 +29,26 @@ class TrackListTableViewController: UITableViewController {
                 }
             }
         }
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return self.trackListViewModel == nil ? 0 : self.trackListViewModel.numberOfSections
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.trackListViewModel.numberOfRowsInSection(section)
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //TracksTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TracksTableViewCell", for: indexPath) as? TracksTableViewCell else {
+            fatalError("cell not found")
+        }
+        let tracksVM = self.trackListViewModel.resultAtIndex(indexPath.row)
+        
+        cell.trackNameLabel.text = tracksVM.name
+        cell.artistNameLabel.text = tracksVM.artist
+        return cell
     }
 
 }
