@@ -17,14 +17,31 @@ class TrackDetailViewController: UIViewController, SFSafariViewControllerDelegat
     @IBOutlet weak var songImageView:UIImageView!
     @IBOutlet weak var moreDetailsButton: UIButton!
     @IBOutlet weak var trackDetailsStackView: UIStackView!
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var trackDetailScrollView: UIScrollView!
     
     var trackDetailViewModel: TrackDetailViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        prettifyUI()
         loadTrackInformation()
         
     }
+    
+    func prettifyUI() {
+        navigationController?.navigationBar.topItem?.backButtonTitle = "Back"
+        trackPriceLabel.textColor = UIColor.systemGray
+        durationLabel.textColor = UIColor.systemGray
+        releaseDateLabel.textColor = UIColor.systemGray
+        songImageView.layer.cornerRadius = songImageView.frame.size.width/2
+        songImageView.clipsToBounds = false
+        songImageView.layer.shadowColor = UIColor.systemGray.cgColor
+        songImageView.layer.shadowOpacity = 0.9
+        songImageView.layer.shadowOffset =  CGSize(width: 3, height: 3)
+        songImageView.layer.shadowRadius = 10
+    }
+    
     func loadTrackInformation() {
         
         trackName.text = trackDetailViewModel.name

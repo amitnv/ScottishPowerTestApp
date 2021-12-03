@@ -18,8 +18,17 @@ class TracksTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        prettifyCellUI()
     }
     
+    func prettifyCellUI() {
+        boxView.layer.borderColor = UIColor.systemGray.cgColor
+        boxView.layer.cornerRadius = 10
+        boxView.layer.borderWidth = 1.0
+        artworkImageView.layer.cornerRadius = 5
+        artistNameLabel.textColor = UIColor.systemPink
+        priceLabel.textColor = UIColor.systemGray
+    }
     func loadTrackInformation(track: TrackDetailViewModel) {
         artworkImageView.loadImage(withUrl: track.artwork)
     }

@@ -38,18 +38,18 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="6PD-7R-yo1">
                                                     <rect key="frame" x="104" y="7" width="233" height="74.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zD6-jj-O2Q">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Track Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zD6-jj-O2Q">
                                                             <rect key="frame" x="0.0" y="0.0" width="100.5" height="21.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NF-qh-r3x">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NF-qh-r3x">
                                                             <rect key="frame" x="0.0" y="28.5" width="86.5" height="19.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <color key="textColor" systemColor="systemPinkColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbc-PE-S4D">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbc-PE-S4D">
                                                             <rect key="frame" x="0.0" y="55" width="37" height="19.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -223,10 +223,12 @@
                     <navigationItem key="navigationItem" id="yXm-Xd-JRQ"/>
                     <connections>
                         <outlet property="artistLabel" destination="2Yv-np-50K" id="jqJ-kg-UJP"/>
+                        <outlet property="contentView" destination="z6N-co-ecK" id="Mkv-FD-Gfl"/>
                         <outlet property="durationLabel" destination="ag1-SP-1z0" id="BTV-3e-m6f"/>
                         <outlet property="moreDetailsButton" destination="rYg-u8-5hc" id="FRs-OY-Zei"/>
                         <outlet property="releaseDateLabel" destination="JJJ-Te-OWE" id="1GW-I5-b57"/>
                         <outlet property="songImageView" destination="sLH-Ig-99G" id="dgW-U0-Oeq"/>
+                        <outlet property="trackDetailScrollView" destination="WLw-Gf-D0t" id="kGu-hx-8Ej"/>
                         <outlet property="trackDetailsStackView" destination="IB3-DF-ggu" id="Zxo-4X-LcK"/>
                         <outlet property="trackName" destination="ILa-jc-89D" id="yb3-hT-FFB"/>
                         <outlet property="trackPriceLabel" destination="keD-sX-LXe" id="MEj-Uq-5G9"/>
