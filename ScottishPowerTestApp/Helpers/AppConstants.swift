@@ -15,7 +15,7 @@ struct AppConstants {
     static let TracksTableViewCell = "TracksTableViewCell"
     static let TrackDetailViewController = "TrackDetailViewController"
     static let MainStoryboardIdentifier = "Main"
-    static let moreDetails = "More Details"
+    static let moreDetails = "More details"
     static let alertHeader = "Error"
     static let alertMessage = "Unable to load the track details."
 }

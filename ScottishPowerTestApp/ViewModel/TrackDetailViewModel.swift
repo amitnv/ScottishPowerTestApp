@@ -18,7 +18,7 @@ extension TrackDetailViewModel {
 }
 extension TrackDetailViewModel {
 
-    var name: String {
+    var name: String? {
         return self.result?.trackName ?? ""
     }
     var artist: String {
