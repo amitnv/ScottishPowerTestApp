@@ -48,7 +48,20 @@ class TrackListTableViewController: UITableViewController {
         
         cell.trackNameLabel.text = tracksVM.name
         cell.artistNameLabel.text = tracksVM.artist
+        cell.priceLabel.text = tracksVM.price
+        cell.loadTrackInformation(track: tracksVM)
+        cell.selectionStyle = .none
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let trackDetailViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TrackDetailViewController") as? TrackDetailViewController
+        let detailsViewModel = self.trackListViewModel.resultAtIndex(indexPath.row)
+        trackDetailViewController?.trackDetailViewModel = detailsViewModel
+        self.navigationController?.pushViewController(trackDetailViewController!, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+       
     }
 
 }

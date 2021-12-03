@@ -21,6 +21,8 @@
 		7B5234A027596B3200A9BA0D /* TrackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B52349F27596B3200A9BA0D /* TrackListViewModel.swift */; };
 		7B5234A227596BFF00A9BA0D /* TrackDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5234A127596BFF00A9BA0D /* TrackDetailViewModel.swift */; };
 		7B5234A427596DE100A9BA0D /* TrackDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5234A327596DE100A9BA0D /* TrackDetailViewController.swift */; };
+		7B5234A6275A5D0C00A9BA0D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5234A5275A5D0C00A9BA0D /* Utility.swift */; };
+		7B5234A8275A5DBB00A9BA0D /* UIImageView+loadFromCacheOrServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5234A7275A5DBB00A9BA0D /* UIImageView+loadFromCacheOrServer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		7B52349F27596B3200A9BA0D /* TrackListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewModel.swift; sourceTree = "<group>"; };
 		7B5234A127596BFF00A9BA0D /* TrackDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailViewModel.swift; sourceTree = "<group>"; };
 		7B5234A327596DE100A9BA0D /* TrackDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailViewController.swift; sourceTree = "<group>"; };
+		7B5234A5275A5D0C00A9BA0D /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		7B5234A7275A5DBB00A9BA0D /* UIImageView+loadFromCacheOrServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+loadFromCacheOrServer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +118,11 @@
 				7B52346D27595CCF00A9BA0D /* Main.storyboard */,
 				7B52349F27596B3200A9BA0D /* TrackListViewModel.swift */,
 				7B5234A127596BFF00A9BA0D /* TrackDetailViewModel.swift */,
+				7B5234A5275A5D0C00A9BA0D /* Utility.swift */,
 				7B52349D27596A8200A9BA0D /* Network.swift */,
 				7B52349B275968E400A9BA0D /* TracksTableViewCell.swift */,
 				7B523499275967F200A9BA0D /* TrackListTableViewController.swift */,
+				7B5234A7275A5DBB00A9BA0D /* UIImageView+loadFromCacheOrServer.swift */,
 				7B5234A327596DE100A9BA0D /* TrackDetailViewController.swift */,
 				7B52347027595CD100A9BA0D /* Assets.xcassets */,
 				7B52347227595CD100A9BA0D /* LaunchScreen.storyboard */,
@@ -275,6 +281,8 @@
 			files = (
 				7B52349E27596A8200A9BA0D /* Network.swift in Sources */,
 				7B5234A427596DE100A9BA0D /* TrackDetailViewController.swift in Sources */,
+				7B5234A6275A5D0C00A9BA0D /* Utility.swift in Sources */,
+				7B5234A8275A5DBB00A9BA0D /* UIImageView+loadFromCacheOrServer.swift in Sources */,
 				7B5234982759677800A9BA0D /* Tracks.swift in Sources */,
 				7B52346827595CCF00A9BA0D /* AppDelegate.swift in Sources */,
 				7B52349A275967F200A9BA0D /* TrackListTableViewController.swift in Sources */,

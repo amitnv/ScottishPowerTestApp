@@ -20,5 +20,8 @@ class TracksTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
+    func loadTrackInformation(track: TrackDetailViewModel) {
+        artworkImageView.loadImage(withUrl: track.artwork)
+    }
     
 }
