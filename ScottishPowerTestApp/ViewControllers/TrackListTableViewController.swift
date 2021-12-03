@@ -19,7 +19,7 @@ class TrackListTableViewController: UITableViewController {
     }
     
     private func fetchTracks() {
-        guard let url = URL(string: "https://itunes.apple.com/search?term=rock") else {return}
+        guard let url = URL(string: AppConstants.APIEndPoint) else {return}
         Network().getTracks(url: url) { tracks in
             let noOfResults = tracks?.count
             if let tracks = tracks {
@@ -41,7 +41,7 @@ class TrackListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //TracksTableViewCell
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TracksTableViewCell", for: indexPath) as? TracksTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.TracksTableViewCell, for: indexPath) as? TracksTableViewCell else {
             fatalError("cell not found")
         }
         let tracksVM = self.trackListViewModel.resultAtIndex(indexPath.row)
@@ -56,7 +56,7 @@ class TrackListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let trackDetailViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TrackDetailViewController") as? TrackDetailViewController
+        let trackDetailViewController = UIStoryboard.init(name: AppConstants.MainStoryboardIdentifier, bundle: nil).instantiateViewController(withIdentifier: AppConstants.TrackDetailViewController) as? TrackDetailViewController
         let detailsViewModel = self.trackListViewModel.resultAtIndex(indexPath.row)
         trackDetailViewController?.trackDetailViewModel = detailsViewModel
         self.navigationController?.pushViewController(trackDetailViewController!, animated: true)

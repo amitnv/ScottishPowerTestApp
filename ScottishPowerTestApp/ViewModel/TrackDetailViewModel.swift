@@ -38,7 +38,7 @@ extension TrackDetailViewModel {
         return String(self.result.trackTimeMillis)
     }
     var release: String {
-        return Utility.formatDate(date: self.result.releaseDate, formatFrom: "yyyy-MM-dd'T'HH:mm:ss'Z'", formatTo: "dd MMM, yyyy")
+        return Utility.formatDate(date: self.result.releaseDate, formatFrom: AppConstants.dateFormatFromJSON, formatTo: AppConstants.dateDisplayFormat)
     }
     var currency: String {
         return self.result.currency

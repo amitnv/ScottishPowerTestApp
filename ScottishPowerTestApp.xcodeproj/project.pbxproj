@@ -23,6 +23,8 @@
 		7B5234A6275A5D0C00A9BA0D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5234A5275A5D0C00A9BA0D /* Utility.swift */; };
 		7B5234A8275A5DBB00A9BA0D /* UIImageView+loadFromCacheOrServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5234A7275A5DBB00A9BA0D /* UIImageView+loadFromCacheOrServer.swift */; };
 		7B5234B7275A789C00A9BA0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5234B6275A789C00A9BA0D /* Main.storyboard */; };
+		7BC182A4275A7C3000E1CB75 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC182A3275A7C3000E1CB75 /* AppConstants.swift */; };
+		7BC182A6275A7D6400E1CB75 /* UIViewController+showAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC182A5275A7D6400E1CB75 /* UIViewController+showAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		7B5234A5275A5D0C00A9BA0D /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		7B5234A7275A5DBB00A9BA0D /* UIImageView+loadFromCacheOrServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+loadFromCacheOrServer.swift"; sourceTree = "<group>"; };
 		7B5234B6275A789C00A9BA0D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7BC182A3275A7C3000E1CB75 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		7BC182A5275A7D6400E1CB75 /* UIViewController+showAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+showAlertView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +194,9 @@
 			isa = PBXGroup;
 			children = (
 				7B5234A5275A5D0C00A9BA0D /* Utility.swift */,
+				7BC182A3275A7C3000E1CB75 /* AppConstants.swift */,
 				7B5234A7275A5DBB00A9BA0D /* UIImageView+loadFromCacheOrServer.swift */,
+				7BC182A5275A7D6400E1CB75 /* UIViewController+showAlertView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -338,9 +344,11 @@
 				7B52349E27596A8200A9BA0D /* Network.swift in Sources */,
 				7B5234A427596DE100A9BA0D /* TrackDetailViewController.swift in Sources */,
 				7B5234A6275A5D0C00A9BA0D /* Utility.swift in Sources */,
+				7BC182A4275A7C3000E1CB75 /* AppConstants.swift in Sources */,
 				7B5234A8275A5DBB00A9BA0D /* UIImageView+loadFromCacheOrServer.swift in Sources */,
 				7B5234982759677800A9BA0D /* Tracks.swift in Sources */,
 				7B52346827595CCF00A9BA0D /* AppDelegate.swift in Sources */,
+				7BC182A6275A7D6400E1CB75 /* UIViewController+showAlertView.swift in Sources */,
 				7B52349A275967F200A9BA0D /* TrackListTableViewController.swift in Sources */,
 				7B5234A227596BFF00A9BA0D /* TrackDetailViewModel.swift in Sources */,
 				7B5234A027596B3200A9BA0D /* TrackListViewModel.swift in Sources */,

@@ -49,7 +49,7 @@ class TrackDetailViewController: UIViewController, SFSafariViewControllerDelegat
         trackPriceLabel.text = returnFormattedText(labelName: "Price", modelData: trackDetailViewModel.price)
         durationLabel.text = returnFormattedText(labelName: "Duration", modelData: trackDetailViewModel.duration)
         releaseDateLabel.text = returnFormattedText(labelName: "Released", modelData: trackDetailViewModel.release)
-        moreDetailsButton.setTitle("More Details", for: .normal)
+        moreDetailsButton.setTitle(AppConstants.moreDetails, for: .normal)
         songImageView.loadImage(withUrl: trackDetailViewModel.artwork)
     }
     
@@ -59,13 +59,13 @@ class TrackDetailViewController: UIViewController, SFSafariViewControllerDelegat
     
     @IBAction func moreDetailsButtonTapped(_ sender: Any) {
         guard let trackUrl = trackDetailViewModel?.url else {
-            showAlert(title: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("Unable to load the track details.", comment: ""))
+            showAlert(title: NSLocalizedString(AppConstants.alertHeader, comment: ""), message: NSLocalizedString(AppConstants.alertMessage, comment: ""))
 
             return
         }
 
         guard let url = URL(string: trackUrl) else {
-            showAlert(title: NSLocalizedString("Error", comment: ""), message: NSLocalizedString("Unable to load the track details.", comment: ""))
+            showAlert(title: NSLocalizedString(AppConstants.alertHeader, comment: ""), message: NSLocalizedString(AppConstants.alertMessage, comment: ""))
 
             return
         }
@@ -81,15 +81,3 @@ class TrackDetailViewController: UIViewController, SFSafariViewControllerDelegat
     }
 }
 
-extension UIViewController {
-    
-    func showAlert(title: String, message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil)
-        
-        alertController.addAction(okAction)
-        
-        present(alertController, animated: true, completion: nil)
-    }
-    
-}
