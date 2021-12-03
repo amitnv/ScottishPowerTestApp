@@ -7,8 +7,7 @@
 
 import UIKit
 import SafariServices
-class TrackDetailViewController: UIViewController {
-    
+class TrackDetailViewController: UIViewController, SFSafariViewControllerDelegate {
     //IBOutlet
     @IBOutlet weak var trackName:UILabel!
     @IBOutlet weak var artistLabel:UILabel!
@@ -23,6 +22,22 @@ class TrackDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadTrackInformation()
+        
+    }
+    func loadTrackInformation() {
+        
+        trackName.text = trackDetailViewModel.name
+        artistLabel.text = trackDetailViewModel.artist
+        trackPriceLabel.text = returnFormattedText(labelName: "Price", modelData: trackDetailViewModel.price)
+        durationLabel.text = returnFormattedText(labelName: "Duration", modelData: trackDetailViewModel.duration)
+        releaseDateLabel.text = returnFormattedText(labelName: "Released", modelData: trackDetailViewModel.release)
+        moreDetailsButton.setTitle("More Details", for: .normal)
+        songImageView.loadImage(withUrl: trackDetailViewModel.artwork)
+    }
+    
+    func returnFormattedText(labelName: String, modelData: String) -> String {
+        return "\(labelName) : \(modelData)"
     }
     
     @IBAction func moreDetailsButtonTapped(_ sender: Any) {
@@ -39,10 +54,14 @@ class TrackDetailViewController: UIViewController {
         }
         
         let safariViewController = SFSafariViewController(url: url)
+        safariViewController.preferredControlTintColor = .systemPink
+        safariViewController.delegate = self
 
         present(safariViewController, animated: true, completion: nil)
     }
-    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        dismiss(animated: true)
+    }
 }
 
 extension UIViewController {

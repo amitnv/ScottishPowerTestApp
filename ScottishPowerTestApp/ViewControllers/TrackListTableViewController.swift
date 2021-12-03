@@ -10,7 +10,7 @@ import UIKit
 class TrackListTableViewController: UITableViewController {
     
     private var trackListViewModel: TrackListViewModel!
-    
+    var resultViewModel: TrackDetailViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
