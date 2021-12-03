@@ -3,4 +3,118 @@
    uuid = "7F0701DC-3973-4EBB-B8A9-B76F83FE3A09"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "215E0923-FE0C-4826-AF56-9BAA46A83CFF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScottishPowerTestAppTests/NetworkAPITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "myTrackViewModelSetup()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "215E0923-FE0C-4826-AF56-9BAA46A83CFF - 24464518be7e9a8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Array&lt;ScottishPowerTestApp.Result&gt;&gt;) -&gt; () in ScottishPowerTestAppTests.NetworkAPITests.myTrackViewModelSetup() -&gt; ()"
+                  moduleName = "ScottishPowerTestAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amitvaidya/Documents/ScottishPowerTestApp/ScottishPowerTestAppTests/NetworkAPITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "141">
+               </Location>
+               <Location
+                  uuid = "215E0923-FE0C-4826-AF56-9BAA46A83CFF - 28541c931bdb213a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScottishPowerTestAppTests.NetworkAPITests.myTrackViewModelSetup() -&gt; ()"
+                  moduleName = "ScottishPowerTestAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amitvaidya/Documents/ScottishPowerTestApp/ScottishPowerTestAppTests/NetworkAPITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "367">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AEC7898F-B1C1-4613-8875-5B7181C19E34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScottishPowerTestAppTests/NetworkAPITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "myTrackViewModelSetup()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E297B70-6979-4B78-927E-B0F0F57E5A3C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScottishPowerTestAppTests/NetworkAPITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "testMyTrackViewModelContainsData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0E297B70-6979-4B78-927E-B0F0F57E5A3C - 66547f1ce9fcad3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScottishPowerTestAppTests.NetworkAPITests.testMyTrackViewModelContainsData() -&gt; ()"
+                  moduleName = "ScottishPowerTestAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amitvaidya/Documents/ScottishPowerTestApp/ScottishPowerTestAppTests/NetworkAPITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "0E297B70-6979-4B78-927E-B0F0F57E5A3C - 66547f1ce9fcad3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScottishPowerTestAppTests.NetworkAPITests.testMyTrackViewModelContainsData() -&gt; ()"
+                  moduleName = "ScottishPowerTestAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amitvaidya/Documents/ScottishPowerTestApp/ScottishPowerTestAppTests/NetworkAPITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "275">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
