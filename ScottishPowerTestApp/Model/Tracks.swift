@@ -7,6 +7,7 @@
 
 import Foundation
 
+//Model files based on the itunes API Response
 //Tracks Model
 struct Tracks: Decodable {
     let resultCount: Int
@@ -16,12 +17,12 @@ struct Tracks: Decodable {
 
 //Result Model
 struct Result: Decodable {
-    let trackName: String
-    let artistName: String
+    let trackName: String?
+    let artistName: String?
     let trackPrice: Double
-    let artworkUrl100: String
-    let currency: String
+    let artworkUrl100: String?
+    let currency: String?
     let trackTimeMillis: Int
-    let releaseDate: String
-    let trackViewUrl: String
+    let releaseDate: String?
+    let trackViewUrl: String?
 }

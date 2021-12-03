@@ -9,8 +9,10 @@ import UIKit
 
 class TrackListTableViewController: UITableViewController {
     
+    //View Models
     private var trackListViewModel: TrackListViewModel!
     var resultViewModel: TrackDetailViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -41,9 +43,7 @@ class TrackListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //TracksTableViewCell
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.TracksTableViewCell, for: indexPath) as? TracksTableViewCell else {
-            fatalError("cell not found")
-        }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.TracksTableViewCell, for: indexPath) as? TracksTableViewCell else {return UITableViewCell()}
         let tracksVM = self.trackListViewModel.resultAtIndex(indexPath.row)
         
         cell.trackNameLabel.text = tracksVM.name

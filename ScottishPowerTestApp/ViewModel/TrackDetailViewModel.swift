@@ -19,13 +19,13 @@ extension TrackDetailViewModel {
 extension TrackDetailViewModel {
 
     var name: String {
-        return self.result.trackName
+        return self.result.trackName ?? ""
     }
     var artist: String {
-        return self.result.artistName
+        return self.result.artistName ?? ""
     }
     var price: String {
-        return String("\(Utility.symbolForCurrency(currency: self.result.currency))\(Utility.formatPrice(price: self.result.trackPrice))")
+        return String("\(Utility.symbolForCurrency(currency: self.result.currency ?? ""))\(Utility.formatPrice(price: self.result.trackPrice ))")
     }
     var duration: String {
         let (hours, minutes, seconds) = Utility.formatSeconds(seconds: self.result.trackTimeMillis / 1000)
@@ -38,16 +38,16 @@ extension TrackDetailViewModel {
         return String(self.result.trackTimeMillis)
     }
     var release: String {
-        return Utility.formatDate(date: self.result.releaseDate, formatFrom: AppConstants.dateFormatFromJSON, formatTo: AppConstants.dateDisplayFormat)
+        return Utility.formatDate(date: self.result.releaseDate ?? "", formatFrom: AppConstants.dateFormatFromJSON, formatTo: AppConstants.dateDisplayFormat)
     }
     var currency: String {
-        return self.result.currency
+        return self.result.currency ?? ""
     }
     var artwork: String {
-        return self.result.artworkUrl100
+        return self.result.artworkUrl100 ?? ""
     }
 
     var url: String {
-        return self.result.trackViewUrl
+        return self.result.trackViewUrl ?? ""
     }
 }

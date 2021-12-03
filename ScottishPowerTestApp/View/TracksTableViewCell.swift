@@ -21,6 +21,7 @@ class TracksTableViewCell: UITableViewCell {
         prettifyCellUI()
     }
     
+    //Used system<UIColor> because they support dark mode
     func prettifyCellUI() {
         boxView.layer.borderColor = UIColor.systemGray.cgColor
         boxView.layer.cornerRadius = 10
@@ -29,6 +30,8 @@ class TracksTableViewCell: UITableViewCell {
         artistNameLabel.textColor = UIColor.systemPink
         priceLabel.textColor = UIColor.systemGray
     }
+    
+    
     func loadTrackInformation(track: TrackDetailViewModel) {
         artworkImageView.loadImage(withUrl: track.artwork)
     }

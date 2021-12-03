@@ -16,7 +16,9 @@ class Network {
             } else if let data = data {
                     let resultList = try? JSONDecoder().decode(Tracks.self, from: data)
                     if let resultList = resultList {
-                        let sortedArray = resultList.results.sorted { $0.releaseDate > $1.releaseDate }
+                        //sort the array in descending order of release date
+                        //Future improvement: Add a button to sort in descending or ascending order
+                        let sortedArray = resultList.results.sorted { $0.releaseDate! > $1.releaseDate! }
                         completion(sortedArray)
                     }
             }

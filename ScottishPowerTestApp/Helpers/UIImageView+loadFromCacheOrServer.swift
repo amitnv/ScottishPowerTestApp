@@ -7,11 +7,11 @@
 
 import UIKit
 
-//temporary cache
+//Temporary cache
 let imageCache = NSCache<NSString, AnyObject>()
 
 extension UIImageView {
-    
+    //Future improvement: Move to a CoreData approach and save a compressed image
     func loadImage(withUrl urlString : String) {
         let url = URL(string: urlString)
         self.image = UIImage(named: "Thumbnail")
